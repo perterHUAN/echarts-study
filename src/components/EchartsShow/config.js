@@ -6,7 +6,8 @@ import {
   BasicLine,
   StackedLine,
   AreaChart,
-  SmoothedLine
+  SmoothedLine,
+  StepLine
 } from '@/components/EchartsShow/echartSamples'
 
 
@@ -104,6 +105,19 @@ const config = [
         component: SmoothedLine,
         description: `
           <p>设置<code>smooth</code>属性为<code>true</code></p>
+        `
+      },
+      {
+        title: `阶跃图`,
+        id: `1-4`,
+        component: StepLine,
+        description:`
+        <p>阶跃图使用垂直和水平的线将点连起来。阶跃图更能表示数据的突变。</p>
+        <ul>
+          <li><code>step: "start"</code>表示从开始阶跃</li>
+          <li><code>step: "middle"</code>表示从中间阶跃</li>
+          <li><code>step: "end"</code>表示从最后阶跃</li>
+        </ul>
         `
       }
     ]
