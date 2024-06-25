@@ -23,7 +23,7 @@ onMounted(() => {
       }, {
         name: 'peter',
         type: 'bar',
-        data: [26, 24, 18, 22, 23, 20, 27],
+        data: [26, -24, 18, 22, 23, 20, 27],
         stack: "x"
       }
     ]
