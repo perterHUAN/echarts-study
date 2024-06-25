@@ -3,6 +3,7 @@ import StackedBar from './StackedBar.vue'
 import BarRace from "./BarRace.vue"
 import WaterFall from "./WaterFall.vue"
 import BasicLine from "./BasicLine.vue"
+import StackedLine from "./StackedLine.vue"
 
 export {
   BasicBar,
@@ -10,4 +11,5 @@ export {
   BarRace,
   WaterFall,
   BasicLine,
+  StackedLine
 }

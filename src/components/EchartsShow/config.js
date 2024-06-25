@@ -1,4 +1,11 @@
-import { BasicBar, StackedBar, BarRace, WaterFall, BasicLine } from '@/components/EchartsShow/echartSamples/index.js'
+import {
+  BasicBar,
+  StackedBar,
+  BarRace,
+  WaterFall,
+  BasicLine,
+  StackedLine
+} from '@/components/EchartsShow/echartSamples'
 
 
 const config = [
@@ -60,7 +67,7 @@ const config = [
         title: '基础折线图',
         id: '1-0',
         component: BasicLine,
-        description:`
+        description: `
           <p>如何设置折线的样式</p>
           <p>使用<code>line-style</code>属性</p>
           <p>可以设置哪些样式?</p>
@@ -74,9 +81,12 @@ const config = [
         `
       },
       {
-        title: '复杂折线图',
+        title: '堆叠折线图',
         id: '1-1',
-        component: BasicBar
+        component: StackedLine,
+        description: `
+          <p>设置<code>stack</code>属性。注意：为了区分普通的折线图和堆叠折现图，我们需要设置<code>areaStyle</code>属性</p>
+        `
       }
     ]
   }
