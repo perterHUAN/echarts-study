@@ -1,14 +1,13 @@
-import { BasicBar, StackedBar,BarRace,WaterFall } from '@/components/EchartsShow/echartSamples/index.js'
-
+import { BasicBar, StackedBar, BarRace, WaterFall, BasicLine } from '@/components/EchartsShow/echartSamples/index.js'
 
 
 const config = [
   {
-    title: "柱状图学习",
+    title: '柱状图学习',
     kinds: [
       {
-        title: "基本柱状图",
-        id: "0-0",
+        title: '基本柱状图',
+        id: '0-0',
         component: BasicBar,
         description: `
           <p>多系列柱状图。series包含多个数据，可以指明name使图例可以显示对应系列数据。</p>
@@ -21,16 +20,16 @@ const config = [
           `
       },
       {
-        title: "堆叠柱状图",
-        id: "0-1",
+        title: '堆叠柱状图',
+        id: '0-1',
         component: StackedBar,
         description: `
           <p>拥有同样stack值的系列将堆叠在一组。产生一个新的值（总和）。</p>
         `
       },
       {
-        title: "动态排序柱状图",
-        id: "0-2",
+        title: '动态排序柱状图',
+        id: '0-2',
         component: BarRace,
         description: `
           <p>不断更新series[0].data中的值并调用setOption</p>
@@ -38,8 +37,8 @@ const config = [
         `
       },
       {
-        title: "阶段瀑布图",
-        id: "0-3",
+        title: '阶段瀑布图',
+        id: '0-3',
         component: WaterFall,
         description: `
           <p>数组的第一个值表示初始值，后一个值是前一个值的差值</p>
@@ -55,20 +54,32 @@ const config = [
     ]
   },
   {
-    title: "折线图学习",
+    title: '折线图学习',
     kinds: [
       {
-        title: "简单折线图",
-        id: "1-0",
-        component: BasicBar
+        title: '基础折线图',
+        id: '1-0',
+        component: BasicLine,
+        description:`
+          <p>如何设置折线的样式</p>
+          <p>使用<code>line-style</code>属性</p>
+          <p>可以设置哪些样式?</p>
+          <p><code>color,width,type(solid,dashed..)</code></p>
+          <p>如何设置点的样式?</p>
+          <p>使用<code>item-style</code>属性</p>
+          <p>可以设置哪些样式?</p>
+          <p><code>color, border-type....</code></p>
+          <p>如何设置标记?</p>
+          <p>使用<code>label</code>属性，<code>show</code>控制标记的显示和隐藏,<code>position</code>控制标记的位置, <code>textStyle</code>控制文字的类型</p>
+        `
       },
       {
-        title: "复杂折线图",
-        id: "1-1",
+        title: '复杂折线图',
+        id: '1-1',
         component: BasicBar
       }
     ]
   }
 ]
 
-export default config;
+export default config
