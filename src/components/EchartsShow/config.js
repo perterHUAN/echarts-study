@@ -1,4 +1,4 @@
-import { BasicBar, StackedBar } from '@/components/EchartsShow/echartSamples/index.js'
+import { BasicBar, StackedBar,BarRace } from '@/components/EchartsShow/echartSamples/index.js'
 
 
 
@@ -29,11 +29,12 @@ const config = [
         `
       },
       {
-        title: "堆叠柱状图",
-        id: "0-1",
-        component: StackedBar,
+        title: "动态排序柱状图",
+        id: "0-2",
+        component: BarRace,
         description: `
-          <p>拥有同样stack值的系列将堆叠在一组。产生一个新的值（总和）。</p>
+          <p>不断更新series[0].data中的值并调用setOption</p>
+          <p>动画根据更新前后的option来绘制</p>
         `
       }
     ]

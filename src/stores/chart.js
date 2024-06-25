@@ -23,11 +23,12 @@ export const useChartStore = defineStore('chart', () => {
     }else if(direction === 'bottom') {
       if(y !== config[x].kinds.length - 1) ++y;
     }else if(direction === 'left') {
-      if(x !== 0) --x;
+      if(x !== 0) { --x; y = 0; }
     }else if(direction === 'right') {
-      if(x !== config.length - 1) ++x;
+      if(x !== config.length - 1) { ++x; y = 0; }
     }
     const newId = `${x}-${y}`;
+    console.log(`newId: ${newId}`)
     document.getElementById(newId).scrollIntoView({
       behavior: "smooth"
     })
