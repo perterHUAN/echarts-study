@@ -1,4 +1,4 @@
-import { BasicBar } from '@/components/EchartsShow/echartSamples/index.js'
+import { BasicBar, StackedBar } from '@/components/EchartsShow/echartSamples/index.js'
 
 
 
@@ -21,9 +21,20 @@ const config = [
           `
       },
       {
-        title: "复杂柱状图",
+        title: "堆叠柱状图",
         id: "0-1",
-        component: BasicBar
+        component: StackedBar,
+        description: `
+          <p>拥有同样stack值的系列将堆叠在一组。产生一个新的值（总和）。</p>
+        `
+      },
+      {
+        title: "堆叠柱状图",
+        id: "0-1",
+        component: StackedBar,
+        description: `
+          <p>拥有同样stack值的系列将堆叠在一组。产生一个新的值（总和）。</p>
+        `
       }
     ]
   },
