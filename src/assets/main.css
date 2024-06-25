@@ -1,0 +1,7 @@
+@import './base.css';
+
+#app {
+  min-block-size: 100vh;
+  display: grid;
+  place-content: center;
+}
