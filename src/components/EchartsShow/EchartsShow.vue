@@ -11,7 +11,7 @@ const chartStore = useChartStore()
     <div class="description">
       <h2>{{ chartStore.currentShowChartInfo.title }}</h2>
       <h3>{{ chartStore.currentShowChartInfo.subtitle }}</h3>
-      <p>{{ chartStore.currentShowChartInfo.description }}</p>
+      <div v-html="chartStore.currentShowChartInfo.description"></div>
     </div>
     <div class="container">
       <div class="chart-container">
@@ -37,6 +37,13 @@ const chartStore = useChartStore()
  .chart {
    display: grid;
    grid-template-columns: 1fr 1fr;
+   max-width: 1200px;
+ }
+ @media (max-width: 1200px) {
+   .chart {
+     grid-template-columns: 1fr;
+     padding-inline: 20px;
+   }
  }
 .container {
   display: flex;
@@ -52,6 +59,11 @@ const chartStore = useChartStore()
   align-items: center;
 
   gap: 4px;
+}
+@media (max-width: 1200px) {
+  .control {
+    flex-direction: row;
+  }
 }
 
 .control button {
