@@ -4,6 +4,7 @@ import BarRace from "./BarRace.vue"
 import WaterFall from "./WaterFall.vue"
 import BasicLine from "./BasicLine.vue"
 import StackedLine from "./StackedLine.vue"
+import AreaChart from './AreaChart.vue'
 
 export {
   BasicBar,
@@ -11,5 +12,6 @@ export {
   BarRace,
   WaterFall,
   BasicLine,
-  StackedLine
+  StackedLine,
+  AreaChart,
 }

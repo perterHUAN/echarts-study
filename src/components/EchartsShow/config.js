@@ -4,7 +4,8 @@ import {
   BarRace,
   WaterFall,
   BasicLine,
-  StackedLine
+  StackedLine,
+  AreaChart
 } from '@/components/EchartsShow/echartSamples'
 
 
@@ -86,6 +87,14 @@ const config = [
         component: StackedLine,
         description: `
           <p>设置<code>stack</code>属性。注意：为了区分普通的折线图和堆叠折现图，我们需要设置<code>areaStyle</code>属性</p>
+        `
+      },
+      {
+        title: `区域平滑面积`,
+        id: `1-2`,
+        component: AreaChart,
+        description: `
+          <p>设置<code>areaStyle</code>属性</p>
         `
       }
     ]
