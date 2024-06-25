@@ -5,7 +5,8 @@ import {
   WaterFall,
   BasicLine,
   StackedLine,
-  AreaChart
+  AreaChart,
+  SmoothedLine
 } from '@/components/EchartsShow/echartSamples'
 
 
@@ -95,6 +96,14 @@ const config = [
         component: AreaChart,
         description: `
           <p>设置<code>areaStyle</code>属性</p>
+        `
+      },
+      {
+        title: `平滑曲线图`,
+        id: `1-3`,
+        component: SmoothedLine,
+        description: `
+          <p>设置<code>smooth</code>属性为<code>true</code></p>
         `
       }
     ]
