@@ -10,7 +10,8 @@ import {
   StepLine,
   BasicPie,
   RingPie,
-  RosePie
+  RosePie,
+  BasicScatter
 } from '@/components/EchartsShow/echartSamples'
 
 
@@ -114,7 +115,7 @@ const config = [
         title: `阶跃图`,
         id: `1-4`,
         component: StepLine,
-        description:`
+        description: `
         <p>阶跃图使用垂直和水平的线将点连起来。阶跃图更能表示数据的突变。</p>
         <ul>
           <li><code>step: "start"</code>表示从开始阶跃</li>
@@ -126,11 +127,11 @@ const config = [
     ]
   },
   {
-    title:"饼图学习",
+    title: '饼图学习',
     kinds: [
       {
-        title: "基础饼图",
-        id: "2-0",
+        title: '基础饼图',
+        id: '2-0',
         component: BasicPie,
         description: `
           <p>和折线图和柱状图不同,饼图不需要坐标轴,而是把数据和名称写在系列中。</p>
@@ -138,15 +139,15 @@ const config = [
         `
       },
       {
-        title: "圆环图",
-        id: "2-1",
+        title: '圆环图',
+        id: '2-1',
         component: RingPie,
         description: `
           <p>设置radius: [xxx, xxx]。自动应用小的值作为内半径</p>`
       },
       {
-        title: "玫瑰图",
-        id: "2-2",
+        title: '玫瑰图',
+        id: '2-2',
         component: RosePie,
         description: `
           <p>弧度相同，但是半径不同。数据值越大，半斤就越大</p>
@@ -154,6 +155,18 @@ const config = [
         `
       }
     ]
+  },
+  {
+    title: '散点图',
+    kinds: [{
+      title: '基础散点图',
+      id: '3-0',
+      component: BasicScatter,
+      description: `
+        <p>可以通过设置<code>symbol</code>来设置点的形状。</p>
+        <p>可以通过设置<code>symbolSize</code>来设置点的形状。可以给定一个值，可以传给一个函数(function(value){}，函数的参数为数据值，这样我们就可以根据数据值给定点的大小</p>
+      `
+    }]
   }
 ]
 

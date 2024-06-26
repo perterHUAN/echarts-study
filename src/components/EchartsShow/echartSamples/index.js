@@ -10,6 +10,7 @@ import StepLine from "./StepLine.vue"
 import BasicPie from "./BasicPie.vue"
 import RingPie from "./RingPie.vue"
 import RosePie from "./RosePie.vue"
+import BasicScatter from "./BasicScatter.vue"
 
 export {
   BasicBar,
@@ -23,5 +24,6 @@ export {
   StepLine,
   BasicPie,
   RingPie,
-  RosePie
+  RosePie,
+  BasicScatter
 }
