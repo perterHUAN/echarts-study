@@ -8,7 +8,8 @@ import {
   AreaChart,
   SmoothedLine,
   StepLine,
-  BasicPie
+  BasicPie,
+  RingPie
 } from '@/components/EchartsShow/echartSamples'
 
 
@@ -134,6 +135,13 @@ const config = [
           <p>和折线图和柱状图不同,饼图不需要坐标轴,而是把数据和名称写在系列中。</p>
           <p>可以通过<code>series.radius</code>来设置，可以设置像素或百分比（此时相对于容器中短的一条边）</p>
         `
+      },
+      {
+        title: "圆环图",
+        id: "2-1",
+        component: RingPie,
+        description: `
+          <p>设置radius: [xxx, xxx]。自动应用小的值作为内半径</p>`
       }
     ]
   }

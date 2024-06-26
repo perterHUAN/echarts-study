@@ -8,6 +8,7 @@ import AreaChart from './AreaChart.vue'
 import SmoothedLine from './SmoothedLine.vue'
 import StepLine from "./StepLine.vue"
 import BasicPie from "./BasicPie.vue"
+import RingPie from "./RingPie.vue"
 
 export {
   BasicBar,
@@ -19,5 +20,6 @@ export {
   AreaChart,
   SmoothedLine,
   StepLine,
-  BasicPie
+  BasicPie,
+  RingPie
 }
