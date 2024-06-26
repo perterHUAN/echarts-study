@@ -9,6 +9,7 @@ import SmoothedLine from './SmoothedLine.vue'
 import StepLine from "./StepLine.vue"
 import BasicPie from "./BasicPie.vue"
 import RingPie from "./RingPie.vue"
+import RosePie from "./RosePie.vue"
 
 export {
   BasicBar,
@@ -21,5 +22,6 @@ export {
   SmoothedLine,
   StepLine,
   BasicPie,
-  RingPie
+  RingPie,
+  RosePie
 }

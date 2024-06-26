@@ -9,7 +9,8 @@ import {
   SmoothedLine,
   StepLine,
   BasicPie,
-  RingPie
+  RingPie,
+  RosePie
 } from '@/components/EchartsShow/echartSamples'
 
 
@@ -142,6 +143,15 @@ const config = [
         component: RingPie,
         description: `
           <p>设置radius: [xxx, xxx]。自动应用小的值作为内半径</p>`
+      },
+      {
+        title: "玫瑰图",
+        id: "2-2",
+        component: RosePie,
+        description: `
+          <p>弧度相同，但是半径不同。数据值越大，半斤就越大</p>
+          <p>通过设置<code>series.roseType="area"</code>来绘制玫瑰图</p>
+        `
       }
     ]
   }
