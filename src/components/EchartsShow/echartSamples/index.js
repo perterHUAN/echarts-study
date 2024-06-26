@@ -7,6 +7,7 @@ import StackedLine from "./StackedLine.vue"
 import AreaChart from './AreaChart.vue'
 import SmoothedLine from './SmoothedLine.vue'
 import StepLine from "./StepLine.vue"
+import BasicPie from "./BasicPie.vue"
 
 export {
   BasicBar,
@@ -17,5 +18,6 @@ export {
   StackedLine,
   AreaChart,
   SmoothedLine,
-  StepLine
+  StepLine,
+  BasicPie
 }

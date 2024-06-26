@@ -7,7 +7,8 @@ import {
   StackedLine,
   AreaChart,
   SmoothedLine,
-  StepLine
+  StepLine,
+  BasicPie
 } from '@/components/EchartsShow/echartSamples'
 
 
@@ -118,6 +119,20 @@ const config = [
           <li><code>step: "middle"</code>表示从中间阶跃</li>
           <li><code>step: "end"</code>表示从最后阶跃</li>
         </ul>
+        `
+      }
+    ]
+  },
+  {
+    title:"饼图学习",
+    kinds: [
+      {
+        title: "基础饼图",
+        id: "2-0",
+        component: BasicPie,
+        description: `
+          <p>和折线图和柱状图不同,饼图不需要坐标轴,而是把数据和名称写在系列中。</p>
+          <p>可以通过<code>series.radius</code>来设置，可以设置像素或百分比（此时相对于容器中短的一条边）</p>
         `
       }
     ]
